@@ -1,0 +1,207 @@
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     font-family: Helvetica, Helvetica, sans-serif;
+     height: 100vh;
+     width: 100vw;
+     overflow: hidden;
+     background: #fffbfa;
+}
+
+.container {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     border: 1px solid #8bd7d2;
+     border-radius: 8px;
+     padding: 20px;
+     width: 500px;
+     height: 500px;
+     box-shadow: 0 5px 15px #121212;
+     background: #54defd;
+     position: relative;
+     font-size: 1.5rem;
+}
+
+
+
+h1 {
+     padding: 0;
+     margin: 0;
+}
+
+button {
+     background: #fffbfa;
+     border: 1px solid #8bd7d2;
+     border-radius: 8px;
+     padding: 15px;
+     box-shadow: inset 0 0 3px 1px #121212;
+     user-select: none;
+     -webkit-user-select: none;
+     font-weight: bold;
+}
+
+button:active {
+     box-shadow: inset 0 0 6px 1px #121212;
+}
+
+
+.buttonCont {
+     position: absolute;
+     bottom: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     width: 70%;
+     margin-top: 20px;
+}
+
+#startStop{
+     margin-right: 10px;
+}
+
+#reset{
+     margin-left: 10px;
+}
+
+.display {
+     font-size: 2rem;
+     margin: 20px;
+     font-weight: bold;
+}
+   
+.lapsWrapper {
+     -ms-overflow-style: none; /* for Internet Explorer, Edge */
+     scrollbar-width: none; /* for Firefox */
+     overflow-y: scroll; 
+     margin-bottom: 100px;
+}
+
+.lapsWrapper::-webkit-scrollbar {
+     display: none; /* for Chrome, Safari, and Opera */
+}
+
+ul {
+     padding: 0;
+     transition: 2s ease-in-out;
+     overflow: hidden;
+}
+
+li {
+     list-style: none;
+     opacity: 1;
+}
+
+.liFadeOut {
+     opacity: 0;
+     transition: opacity 2s ease-out;
+}
+
+@media only screen and (max-width: 1280px) {
+     .container {
+          width: 90vw;
+          height: 90vh;
+          font-size: 2rem;
+     }
+
+     span {
+          font-size: 3rem;
+     }
+
+     li {
+          font-size: 2rem;
+     }
+
+     .buttonCont {
+          bottom: 50px;
+     }
+}
+
+@media only screen and (max-width: 820px) {
+     .container {
+          width: 90vw;
+          height: 90vh;
+          font-size: 2rem;
+     }
+
+     span {
+          font-size: 3rem;
+     }
+
+     li {
+          font-size: 2rem;
+     }
+
+     .buttonCont {
+          bottom: 50px;
+     }
+}
+
+@media only screen and (max-width: 420px) {
+     .container {
+          width: 90vw;
+          height: 90vh;
+          font-size: 1.5rem;
+     }
+
+     span {
+          font-size: 2rem;
+     }
+
+     li {
+          font-size: 1.5rem;
+     }
+
+     .buttonCont {
+          bottom: 30px;
+     }
+
+     button {
+          font-size: 1rem;
+     }
+}
+
+@media only screen and (max-width: 280px) {
+     .container {
+          width: 90vw;
+          height: 90vh;
+          font-size: 1rem;
+     }
+
+     span {
+          font-size: 1rem;
+     }
+
+     li {
+          font-size: 1rem;
+     }
+
+     .buttonCont {
+          bottom: 30px;
+     }
+
+     button {
+          font-size: 1rem;
+          padding: 15px;
+     }
+
+     #startStop{
+          margin-right: 5px;
+     }
+     
+     #reset{
+          margin-left: 5px;
+     }
+}
+
+
+/* colors */
+/* https://coolors.co/49c6e5-54defd-fffbfa-00bd9d-8bd7d2 */
